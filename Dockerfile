@@ -17,4 +17,4 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 5000
 
 # Run with Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "3", "ui.app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "ui.app:app"]
