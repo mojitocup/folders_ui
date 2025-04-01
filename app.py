@@ -29,6 +29,9 @@ def index():
                                             any(item.startswith(prefix) for prefix in app.config['FOLDER_PREFIXES'] if prefix)):
                 folders.append(item)
     
+    # Sort folders alphabetically
+    folders.sort()
+    
     return render_template('index.html', folders=folders)
 
 @folders_bp.route('/folder/<folder_name>')
