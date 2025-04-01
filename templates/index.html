@@ -40,7 +40,7 @@
             <div class="card-body">
                 {% if folders %}
                     {% for folder in folders %}
-                        <a href="{{ url_for('show_folder', folder_name=folder) }}" class="folder-link">
+                        <a href="{{ url_for('folders.show_folder', folder_name=folder) }}" class="folder-link">
                             {{ folder }}
                         </a>
                     {% endfor %}
